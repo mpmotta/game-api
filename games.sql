@@ -1,4 +1,4 @@
-CREATE TABLE games (
+CREATE TABLE jogos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
     estudio VARCHAR(255) NOT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE games (
     disponibilidade BOOLEAN NOT NULL DEFAULT TRUE
 );
 
-INSERT INTO games (nome, estudio, categoria, idade, valor, disponibilidade) VALUES
+INSERT INTO jogos (nome, estudio, categoria, idade, valor, disponibilidade) VALUES
 ('Spider-Man 2', 'Insomniac Games', 'Ação/Aventura', '16+', 349.90, TRUE),
 ('God of War Ragnarök', 'Santa Monica Studio', 'Ação/Aventura', '18+', 299.90, TRUE),
 ('Final Fantasy XVI', 'Square Enix', 'RPG', '16+', 299.90, TRUE),
