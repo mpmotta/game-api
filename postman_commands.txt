@@ -1,0 +1,33 @@
+GET http://localhost/game-api/api.php/games
+GET http://localhost/game-api/api.php/games/5
+POST http://localhost/game-api/api.php/games
+Body (JSON):
+{
+  "nome": "Spider-Man 2",
+  "estudio": "Insomniac Games",
+  "categoria": "Ação/Aventura",
+  "idade": "16+",
+  "valor": 349.90,
+  "disponibilidade": true
+}
+PUT http://localhost/games-api/games/5
+Body (JSON):
+{
+  "nome": "Spider-Man 2",
+  "estudio": "Insomniac Games",
+  "categoria": "Ação/Aventura",
+  "idade": "16+",
+  "valor": 329.90,
+  "disponibilidade": true
+}
+DELETE http://localhost/games-api/api.php/games/5
+
+GET http://localhost/games-api/api.php/games/categoria/Aventura
+GET http://localhost/games-api/api.php/games/nome/Spider
+GET http://localhost/games-api/api.php/games/estudio/Insomniac
+GET http://localhost/games-api/api.php/games/idade/18+
+GET http://localhost/games-api/api.php/games/valorMenor/200
+GET http://localhost/games-api/api.php/games/valorMaior/200
+GET http://localhost/games-api/api.php/games/valorEntre/100/300
+GET http://localhost/games-api/api.php/games/disponibilidade/true
+GET http://localhost/games-api/api.php/games/disponibilidade/false
